@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2old2code.org | Linux-Based AI GRC & Defense IT/OT Security</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent-cyan: #06b6d4;
+            --accent-green: #10b981;
+            --border-color: #334155;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        header {
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 2rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(6, 182, 212, 0.1);
+            color: var(--accent-cyan);
+            border: 1px solid var(--accent-cyan);
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            letter-spacing: -0.025em;
+            margin-bottom: 0.5rem;
+            color: #ffffff;
+        }
+
+        .motto {
+            font-size: 1.25rem;
+            color: var(--accent-green);
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .sub-header {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            max-width: 800px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+        }
+
+        .card h2 {
+            font-size: 1.25rem;
+            color: var(--accent-cyan);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .card ul {
+            list-style-type: none;
+        }
+
+        .card li {
+            position: relative;
+            padding-left: 1.25rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-muted);
+        }
+
+        .card li::before {
+            content: "▹";
+            position: absolute;
+            left: 0;
+            color: var(--accent-green);
+        }
+
+        .cert-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .cert-tag {
+            background: #0f172a;
+            border: 1px solid var(--border-color);
+            padding: 0.35rem 0.65rem;
+            border-radius: 0.375rem;
+            font-size: 0.85rem;
+            color: var(--text-main);
+        }
+
+        .cert-tag.active {
+            border-color: var(--accent-green);
+            color: var(--accent-green);
+        }
+
+        .bio-section {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 0.75rem;
+            padding: 2rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .bio-section h2 {
+            color: #ffffff;
+            margin-bottom: 1rem;
+        }
+
+        .bio-section p {
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            border-top: 1px solid var(--border-color);
+            padding-top: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .footer-links a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+            margin-left: 1rem;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 1.8rem; }
+            .footer-links a { margin-left: 0; margin-right: 1rem; display: inline-block; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <span class="badge">Gov / DoD / Space Force Track</span>
+        <h1>2old2code.org</h1>
+        <div class="motto">"Old hero git with zero quit."</div>
+        <p class="sub-header">
+            Building and securing enterprise Linux infrastructure, Zero Trust identity boundaries, and hardened IT/OT systems for defense and national security operations.
+        </p>
+    </header>
+
+    <div class="grid">
+        <div class="card">
+            <h2>💻 Daily Driver & Lab Workstation</h2>
+            <ul>
+                <li><strong>Host OS:</strong> Bare-Metal AlmaLinux 10.2 + KDE Plasma 6</li>
+                <li><strong>Virtualization:</strong> KVM/QEMU & Virt-Manager (Type-1)</li>
+                <li><strong>Sandboxes:</strong> Air-gapped Windows 10/11 VMs</li>
+                <li><strong>CLI Automation:</strong> Bash & PowerShell Core (<code>pwsh</code>)</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>🛡️ Enterprise Identity & GRC</h2>
+            <ul>
+                <li><strong>Identity Boundaries:</strong> Microsoft Entra ID, RBAC, Conditional Access</li>
+                <li><strong>Data Protection:</strong> Purview DLP, CMMC & NIST SP 800-171</li>
+                <li><strong>SIEM Telemetry:</strong> Microsoft Sentinel (KQL)</li>
+                <li><strong>System Hardening:</strong> DISA STIG baselines & Auditd</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="bio-section">
+        <h2>Systemic Diagnosis & Engineering Foundation</h2>
+        <p>
+            Bridging decades of complex physical systems diagnosis (Chiropractic MD) and structural engineering (Residential Builder/Contractor) into hardened Linux system administration and AI GRC governance.
+        </p>
+        <p>
+            Focused on operational resilience, zero-drama execution, and protecting North American critical infrastructure and defense industrial base assets.
+        </p>
+        
+        <h3 style="color: var(--accent-cyan); margin-top: 1.5rem; margin-bottom: 0.5rem; font-size: 1rem;">Certification Stack:</h3>
+        <div class="cert-list">
+            <span class="cert-tag active">LPIC-2</span>
+            <span class="cert-tag active">Security+</span>
+            <span class="cert-tag active">Network+</span>
+            <span class="cert-tag">RHCSA / EX200</span>
+            <span class="cert-tag">CySA+</span>
+            <span class="cert-tag">Security X</span>
+            <span class="cert-tag">CGRC</span>
+            <span class="cert-tag">CISSP</span>
+        </div>
+    </div>
+
+    <footer>
+        <div>© 2026 2old2code.org | Hosted on GitHub Pages via Cloudflare</div>
+        <div class="footer-links">
+            <a href="https://github.com/hayessec" target="_blank">GitHub</a>
+            <a href="mailto:hayes.sec@proton.me">Contact Email</a>
+        </div>
+    </footer>
+
+</body>
+</html>
